@@ -38,4 +38,4 @@ function! GetVisual() range
 endfunction
 
 " Start the find and replace command across the entire file
-vmap <C-r> :%s/<c-r>=GetVisual()<cr>//gc<left><left><left>
+vmap <C-r> <Esc>:%s/<c-r>=GetVisual()<cr>//gc<left><left><left>
